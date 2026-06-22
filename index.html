@@ -12,46 +12,36 @@ body{background:#fff7f8;text-align:center;padding:40px;font-family:Georgia;color
 <a class="btn" href="letter.html">OPEN YOUR BIRTHDAY GIFT</a>
 <script>
 const birthday = new Date("2026-06-29T00:00:00").getTime();
-
 setInterval(() => {
-
 let now = new Date().getTime();
-
 let diff = birthday - now;
-
 if (diff <= 0) {
 countdown.innerHTML =
 "🎉 HAPPY BIRTHDAY SAYANGGG 💗";
 return;
 }
-
 let days =
 Math.floor(diff/(1000*60*60*24));
-
 let hours =
 Math.floor(
 (diff%(1000*60*60*24))
 /
 (1000*60*60)
 );
-
 let minutes =
 Math.floor(
 (diff%(1000*60*60))
 /
 (1000*60)
 );
-
 let seconds =
 Math.floor(
 (diff%(1000*60))
 /
 1000
 );
-
 countdown.innerHTML =
 `⏳ ${days}d ${hours}h ${minutes}m ${seconds}s`;
-
 },1000);
 </script>
 </body></html>
