@@ -1,0 +1,21 @@
+<!DOCTYPE html><html><head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+body{background:#fff7f8;text-align:center;padding:40px;font-family:Georgia;color:#7a2340}
+.btn{display:inline-block;padding:14px 22px;background:#d86a92;color:white;border-radius:20px;text-decoration:none}
+#countdown{font-size:22px}
+</style></head><body>
+<h1>Happy Birthday Si Cantik Comelkuuu 💗</h1>
+<p>This isn’t just a birthday message—<br>it’s a small place filled with my favourite memories of you.</p>
+<div id="countdown"></div>
+<p>Wear earphones for better experience 🎧</p>
+<a class="btn" href="letter.html">OPEN YOUR BIRTHDAY GIFT</a>
+<script>
+const b=new Date("2026-06-29T00:00:00").getTime();
+setInterval(()=>{
+let d=b-new Date().getTime();
+if(d<0){countdown.innerHTML="🎉 IT'S YOUR DAYYYYY 💗";return;}
+countdown.innerHTML="⏳ "+Math.floor(d/86400000)+" Days left";
+},1000)
+</script>
+</body></html>
